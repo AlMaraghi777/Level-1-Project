@@ -45,7 +45,7 @@ def plot_data(names, times, colours):
     plt.tight_layout(pad=2)
     plt.show()
 
-file_path = Path('data.csv')
+file_path = Path('/workspaces/Level-1-Project/data.csv')
 
 try:
     names, times, colours = read_data(file_path)

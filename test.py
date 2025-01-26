@@ -39,6 +39,6 @@ def process_data(file_name, user_name):
     except ValueError:
         print("Couldn't read {file_name")
 
-file_name = "data.csv"
+file_name = "/workspaces/Level-1-Project/Data.csv"
 user_name = input("Enter name to search for: ")
 process_data(file_name, user_name)

@@ -5,7 +5,7 @@ from tkinter import ttk
 import pandas as pd
 
 # Load data
-df = pd.read_csv("Data.csv")
+df = pd.read_csv("/workspaces/Level-1-Project/Data.csv")
 df["Time"] = df["Time"].astype(float)
 
 # All the units of different parameters measured
