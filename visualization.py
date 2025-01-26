@@ -5,12 +5,12 @@ from tkinter import ttk
 import pandas as pd
 
 # Load data
-df = pd.read_csv("/workspaces/Level-1-Project/Data.csv")
+df = pd.read_csv("/workspaces/Level-1-Project/data.csv")
 df["Time"] = df["Time"].astype(float)
 
 # All the units of different parameters measured
 units = {
-    "Time":"Second",#Interval time
+    "Time":"Seconds",#Interval time
 }
 
 def update_plot():
@@ -19,7 +19,7 @@ def update_plot():
         ax.set_title("No data available")
     else:
         ax.bar(df["Name"],df["Time"],color='skyblue')
-        ax.set_title("Radio Signal Analysis")
+        ax.set_title("")
         ax.set_xlabel("Name")
         ax.set_ylabel(f"{'Time'} ({units['Time']})")
         #Avoid duplication of names

@@ -6,7 +6,7 @@ def process_data(file_name, user_name):
         with open(file_name, 'r') as file:
             header = file.readline().strip().split(',')
             name_index = header.index('Name')
-            time_index = header.index('Time (Seconds)')
+            time_index = header.index('Time')
 
             for line in file:
                 fields = line.strip().split(',')
