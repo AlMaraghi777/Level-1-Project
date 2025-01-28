@@ -24,6 +24,7 @@ def process_data(file_name, user_name):
         print(f"Min Time: {min_time:.3f} seconds")
         print(f"Max Time: {max_time:.3f} seconds")
         print(f"Average Time: {avg_time:.3f} seconds")
+        print(f"Number Of Falls: {len(data)} falls")
 
         plt.figure(figsize=(8, 5))
         plt.plot(data, marker='o', linestyle='-', color='b', label=user_name)
